@@ -26,7 +26,7 @@ jobs:
       run: |
         ${GITHUB_WORKSPACE}/sl --version
         ${GITHUB_WORKSPACE}/sl analyze --strict --wait \
-          --app shiftleft-js-demo \
+          --app js-demoapp \
           --tag branch=${{ github.head_ref }} \
           --jssrc --container 18fgsa/s3-resource .
       env:
